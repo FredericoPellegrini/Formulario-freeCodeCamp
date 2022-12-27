@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+        <title>freeCodeCamp | Formulário de pesquisa</title>
+    </head>
+    <body>
+        <header>
+        <h1>Formulário de Pesquisa | freeCodeCamp</h1>
+        <p>Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma!</p>
+        </header>
+
+        <form>
+            <label>Nome</br>
+                <input type="text" name="nome" id="name" required/>
+            </label>
+        </br>
+    </br>
+            <label>Email</br>
+                <input type="email" name="email" id="email" required/>
+            </label>
+        </br>
+    </br>
+            <label>Idade(Opcional)</br>
+                <input type="number" name="idade" min="10" max="99" id="idade">
+            </label>
+        </br>
+    </br>
+            <label>Qual opção melhor descreve sua função atual?</br>
+                <select name="role" id="select1" required>
+                    <option disabled selected value>Selecione a função atual</option>
+                    <option value="estudante">Estudante</option>
+                    <option value="trabalhador">Trabalhador em tempo integral</option>
+                    <option value="aprendiz">Estudante em tempo integral</option>
+                    <option valeue="prefNao">Prefiro não informar</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </label>
+        </br>
+    </br>
+            <label>Você recomendaria o freeCodeCamp a um amigo?</br>
+                <input type="radio" name="recomd" required/>Definivamente</br>
+                <input type="radio" name="recomd" required/>Talvez</br>
+                <input type="radio" name="recomd" required/>Não tenho certeza</br>               
+            </label>
+        </br>
+            <label>Qual é o seu recurso favorito do freeCodeCamp?</br>
+                <select name="recurso" id="select1" required>
+                    <option disabled selected value>Selecione uma opção</option>
+                    <option name="desafios">Desafios</option>
+                    <option name="projetos">Projetos</option>
+                    <option name="comunidade">Comunidade</option>
+                    <option name="CodAberto">Código Aberto</option>
+                </select>
+            </label>
+        </br>
+    </br>
+        <label>
+            <label id="checkbox">O que você gostaria de ver melhorado? (Marque todos os que se aplicam)</br>
+                <input type="checkbox" name="FrontEndProjects" id="chckbox"/>Front-End Projects</br>                
+                <input type="checkbox" name="BackEndProjects" id="chckbox"/>Back-end Projects</br>
+                <input type="checkbox" name="VisualizarDados" id="chckbox"/>Visualização de dados</br>
+                <input type="checkbox" name="Desafios" id="chckbox"/>Desafios</br>
+                <input type="checkbox" name="OpenSource" id="chckbox"/>Comunidade de código aberto</br>
+                <input type="checkbox" name="Gitter" id="chckbox"/>Salas de ajuda do Gitter</br>
+                <input type="checkbox" name="Videos" id="chckbox"/>Vídeos</br>
+                <input type="checkbox" name="Encontros" id="chckbox"/>Encontros</br>
+                <input type="checkbox" name="Wiki" id="chckbox"/>Wiki</br>
+                <input type="checkbox" name="Foruns" id="chckbox"/>Foruns</br>
+                <input type="checkbox" name="cursosAdicionais" id="chckbox"/>Cursos adicionais</br>
+            </label>
+        </label>
+        </br>
+            <label>Algum comentário ou sugestão?</br>
+                <textarea name="comentariosESugestoes"></textarea>
+            </label>
+        </br>
+        </br>
+            <input type="Submit" id="submit"/>
+        </form>
+
+    </body>
+</html>
